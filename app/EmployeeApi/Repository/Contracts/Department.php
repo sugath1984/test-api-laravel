@@ -39,5 +39,4 @@ interface Department
      * @return mixed
      */
     public function getEmployees($id);
-
 }

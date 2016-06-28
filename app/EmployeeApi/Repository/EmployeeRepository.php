@@ -42,9 +42,10 @@ class EmployeeRepository implements Employee
      */
     public function getById($id)
     {
-        $employee = $this->entityManager->getRepository(\App\EmployeeApi\Entity\Employee::class)->find($id);
+        $employee = $this->entityManager->getRepository (\App\EmployeeApi\Entity\Employee::class)->find($id);
 
-        if (empty($employee)) {
+        if (empty($employee)) 
+        {
             throw new EntityNotFoundException('');
         }
 
@@ -68,7 +69,5 @@ class EmployeeRepository implements Employee
     {
         $this->entityManager->merge($employee);
         $this->entityManager->flush();
-    }
-
-    
+    }    
 }

@@ -102,8 +102,5 @@ class Employee
         $this->department = $department;
     }
 
-
-
-
 }
 

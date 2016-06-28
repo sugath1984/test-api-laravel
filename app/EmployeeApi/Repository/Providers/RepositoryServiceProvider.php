@@ -17,9 +17,6 @@ use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
-
-
-
     /**
      * Register the service provider.
      *
@@ -30,6 +27,4 @@ class RepositoryServiceProvider extends ServiceProvider
         $this->app->bind(Department::class, DepartmentRepository::class);
         $this->app->bind(Employee::class, EmployeeRepository::class);
     }
-
-
 }

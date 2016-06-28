@@ -134,6 +134,5 @@ class Department
         $this->subDepartments = $subDepartments;
     }
 
-
 }
 
